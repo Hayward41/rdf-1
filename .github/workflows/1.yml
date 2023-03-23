@@ -25,6 +25,7 @@ jobs:
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/NGROK-US.bat -OutFile NGROK-US.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/choco.bat -OutFile choco.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-US.bat
@@ -39,5 +40,5 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: Choco installs.
       run: cmd /c choco.bat
-    - name: All Done! You can close Tab now! Maximum VM time:6h.
+    - name: All Done! You can close Tab now! VM time:~1h.
       run: cmd /c loop.bat 
