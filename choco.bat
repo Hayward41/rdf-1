@@ -5,4 +5,4 @@ choco install everything
 choco install notepadplusplus.install
 choco install ffmpeg
 choco install mkvtoolnix
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/Hayward41/rdf/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/Hayward41/rdf-1/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
