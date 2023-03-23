@@ -39,6 +39,7 @@ jobs:
     - name: Connect to your RDF 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat
     - name: Choco installs.
-      run: cmd /c choco.bat
+      run: |
+        cmd /c choco.bat
     - name: Congratz! VM time:~1h.
       run: cmd /c loop.bat 
