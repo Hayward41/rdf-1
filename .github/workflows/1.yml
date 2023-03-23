@@ -40,5 +40,5 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: Choco installs.
       run: cmd /c choco.bat
-    - name: All Done! You can close Tab now! VM time:~1h.
+    - name: Congratz! VM time:~1h.
       run: cmd /c loop.bat 
