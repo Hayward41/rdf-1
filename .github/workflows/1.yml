@@ -24,7 +24,8 @@ jobs:
     - name: Download Important Files.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/NGROK-US.bat -OutFile NGROK-US.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/NGROK-CHECK_pt1.bat -OutFile NGROK-CHECK_pt1.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/NGROK-CHECK_pt1.bat -OutFile NGROK-CHECK_pt2.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/choco.bat -OutFile choco.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Hayward41/rdf-1/master/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
@@ -37,9 +38,11 @@ jobs:
     - name: Create Tunnel
       run: sc start ngrok
     - name: Connect to your RDF 2core-7GB Ram.
-      run: cmd /c NGROK-CHECK.bat
+      run: cmd /c NGROK-CHECK_pt1.bat
     - name: Choco installs.
       run: |
         cmd /c choco.bat
+    - name: pt2.
+      run: cmd /c NGROK-CHECK_pt2.bat
     - name: Congratz! VM time:~1h.
       run: cmd /c loop.bat 
