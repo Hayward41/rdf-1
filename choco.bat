@@ -5,7 +5,7 @@ choco.exe install googledrive --no-progress
 copy "C:\Program Files\Google\Drive File Stream\launch.bat" "C:\Users\Public\Desktop\gdrive.bat"
 choco.exe install everything --no-progress
 choco.exe install notepadplusplus.install --no-progress
-choco.exe install yt-dlp
+choco.exe install yt-dlp --no-progress
 choco.exe install ffmpeg --no-progress
 choco.exe install mkvtoolnix --no-progress
 copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\MKVToolNix\MKVToolNix GUI.lnk" "C:\Users\Public\Desktop\mkvtoolnix.lnk"
